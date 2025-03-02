@@ -1,6 +1,9 @@
-import { CheckCircle, Circle, Copy } from "lucide-react";
+import { CheckCircle, Circle, Copy, Eye, EyeOff } from "lucide-react";
+import { useState } from "react";
 
 const App = () => {
+  const [showAddress, setShowAddress] = useState(false);
+
   return (
     <div className="bg-black text-white min-h-screen flex items-center justify-center p-4">
       <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-full max-w-md">
@@ -40,9 +43,7 @@ const App = () => {
             </div>
             <div className="flex flex-col gap-1">
               <p>Successful arrival</p>
-              <p className="text-xs text-gray-400">
-                Expected 2025-03-02
-              </p>
+              <p className="text-xs text-gray-400">Expected 2025-03-02</p>
             </div>
           </div>
         </div>
@@ -71,7 +72,10 @@ const App = () => {
           <div className="flex justify-between items-center">
             <p className="font-semibold">Address:</p>
             <div className="flex items-center gap-2">
-              <p>XXXXXXXXXXXXXXXXXXXX</p>
+              <p>{showAddress ? "0xABCDEF1234567890" : "********************"}</p>
+              <button onClick={() => setShowAddress(!showAddress)}>
+                {showAddress ? <EyeOff className="cursor-pointer" size={16} /> : <Eye className="cursor-pointer" size={16} />}
+              </button>
               <Copy className="cursor-pointer" size={16} />
             </div>
           </div>
