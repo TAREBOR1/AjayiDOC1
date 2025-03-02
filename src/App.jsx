@@ -58,7 +58,7 @@ const App = () => {
           </div>
           <div className="flex justify-between">
             <p className="font-semibold">Network:</p>
-            <p>Tron/TRX</p>
+            <p>BSC(BEP20)</p>
           </div>
           <div className="flex justify-between">
             <p className="font-semibold">Arrival Amount:</p>
