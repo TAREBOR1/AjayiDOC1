@@ -66,12 +66,12 @@ const App = () => {
           </div>
           <div className="flex justify-between">
             <p className="font-semibold">Fee:</p>
-            <p>2 USDT</p>
+            <p>2000.00 USDT</p>
           </div>
           <div className="flex justify-between items-center">
             <p className="font-semibold">Address:</p>
             <div className="flex items-center gap-2">
-              <p>TZF8...3VViWrVpE</p>
+              <p>XXXXXXXXXXXXXXXXXXXX</p>
               <Copy className="cursor-pointer" size={16} />
             </div>
           </div>
