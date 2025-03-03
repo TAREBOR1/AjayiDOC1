@@ -1,8 +1,8 @@
 import { CheckCircle, Circle, Copy, Eye, EyeOff } from "lucide-react";
-import { useState } from "react";
+
 
 const App = () => {
-  const [showAddress, setShowAddress] = useState(false);
+  
 
   return (
     <div className="bg-black text-white min-h-screen flex items-center justify-center p-4">
