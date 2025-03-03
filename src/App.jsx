@@ -69,16 +69,6 @@ const App = () => {
             <p className="font-semibold">Fee:</p>
             <p>2000.00 USDT</p>
           </div>
-          <div className="flex justify-between items-center">
-            <p className="font-semibold">Address:</p>
-            <div className="flex items-center gap-2">
-              <p>{showAddress ? "0xABCDEF1234567890" : "********************"}</p>
-              <button onClick={() => setShowAddress(!showAddress)}>
-                {showAddress ? <EyeOff className="cursor-pointer" size={16} /> : <Eye className="cursor-pointer" size={16} />}
-              </button>
-              <Copy className="cursor-pointer" size={16} />
-            </div>
-          </div>
         </div>
       </div>
     </div>
